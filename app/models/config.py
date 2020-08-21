@@ -2,8 +2,9 @@ class Config:
     # Derived from here:
     # https://sites.google.com/site/tomihasa/google-language-codes#searchlanguage
     LANGUAGES = [
-        {'name': 'Default (use server location)', 'value': ''},
         {'name': 'English', 'value': 'lang_en'},
+        {'name': 'Hindi', 'value': 'lang_hi'},
+        {'name': 'Default (use server location)', 'value': ''},
         {'name': 'Afrikaans', 'value': 'lang_af'},
         {'name': 'Arabic', 'value': 'lang_ar'},
         {'name': 'Armenian', 'value': 'lang_hy'},
@@ -24,7 +25,6 @@ class Config:
         {'name': 'German', 'value': 'lang_de'},
         {'name': 'Greek', 'value': 'lang_el'},
         {'name': 'Hebrew', 'value': 'lang_iw'},
-        {'name': 'Hindi', 'value': 'lang_hi'},
         {'name': 'Hungarian', 'value': 'lang_hu'},
         {'name': 'Icelandic', 'value': 'lang_is'},
         {'name': 'Indonesian', 'value': 'lang_id'},
@@ -52,6 +52,7 @@ class Config:
     ]
 
     COUNTRIES = [
+        {'name': 'India', 'value': 'countryIN'},
         {'name': 'Default (use server location)', 'value': ''},
         {'name': 'Afghanistan', 'value': 'countryAF'},
         {'name': 'Albania', 'value': 'countryAL'},
@@ -154,7 +155,6 @@ class Config:
         {'name': 'Hong Kong', 'value': 'countryHK'},
         {'name': 'Hungary', 'value': 'countryHU'},
         {'name': 'Iceland', 'value': 'countryIS'},
-        {'name': 'India', 'value': 'countryIN'},
         {'name': 'Indonesia', 'value': 'countryID'},
         {'name': 'Iran, Islamic Republic of', 'value': 'countryIR'},
         {'name': 'Iraq', 'value': 'countryIQ'},
@@ -303,7 +303,7 @@ class Config:
         self.lang_interface = ''
         self.ctry = ''
         self.safe = False
-        self.dark = False
+        self.dark = True
         self.nojs = False
         self.near = ''
         self.alts = False
